@@ -1,0 +1,97 @@
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 10px;
+    
+}
+body{
+    background-color: rgb(224, 219, 219);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 35rem;
+    padding: 1.5rem ;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.362);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+h1{
+    font-size: 2.5rem;
+    color: red;
+
+}
+input, button[type="submit"] {
+    font-weight: 600;
+    text-align: center;
+    height: auto;
+    max-width: 50%;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.396);
+    outline: none;
+}
+#question:focus, input[type="email"]:focus, input[type="password"]:focus{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.596);
+}
+input::placeholder{
+    font-size: 1.5rem;
+}
+button[type="submit"]{
+    max-width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+/* Specific Styling for our home page */
+#question{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#optionA, #optionB, #optionC, #optionD, #correctAnswer{
+    width: 80%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.658);
+    border-radius: 0px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    transition: outline 500ms;
+}
+#optionA::placeholder, #optionB::placeholder, #optionC::placeholder, #optionD::placeholder, #correctAnswer::placeholder{
+    font-weight: 600;
+}
+
+#optionA:focus, #optionB:focus, #optionC:focus, #optionD:focus, #correctAnswer:focus{
+    outline-style: solid;
+    outline-color: rgba(0, 255, 255, 0.505);
+    outline-width: 4px;
+    
+}
+#optionA{
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem; 
+}
+#optionD{
+    border-bottom-left-radius:0.5rem ;
+    border-bottom-right-radius: 0.5rem;
+}
+#correctAnswer{
+    border-radius: 0.5rem;
+    padding-left: 1.2rem, 1rem;
+}
+.home-form{
+    max-width: 50rem;
+}
